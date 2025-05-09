@@ -12,7 +12,7 @@
 #define BIN2 9  //Motor B- 
 #define PWMA 11  // Enable 1&2 for power (battery)
 #define PWMB 12  // Enable 3&4 for power (battery)
-#define STBY 5 //  
+#define STBY 5 // Sensor Array Pin  
 
 const int offsetA = 1;
 const int offsetB = 1;
