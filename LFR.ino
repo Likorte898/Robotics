@@ -6,13 +6,13 @@
 
 //Assign the motor pins
 
-#define AIN1 21  //Motor 1 
-#define BIN1 25  //
-#define AIN2 22
-#define BIN2 33
-#define PWMA 23
-#define PWMB 32
-#define STBY 19
+#define AIN1 13  // Motor A +
+#define BIN1 8  // Motor B +
+#define AIN2 12  // Motor A-
+#define BIN2 9  //Motor B- 
+#define PWMA 11  // Enable 1&2 for power (battery)
+#define PWMB 12  // Enable 3&4 for power (battery)
+#define STBY 5 //  
 
 const int offsetA = 1;
 const int offsetB = 1;
@@ -60,7 +60,7 @@ void setup()
 {
   // configure the sensors
   qtr.setTypeAnalog();
-  qtr.setSensorPins((const uint8_t[]){26, 27, 14, 12, 13}, SensorCount); //pins for the output and input. Configured for a ESP. (TODO- Configure for UNO.)
+  qtr.setSensorPins((const uint8_t[]){6, 5, 4, 3, 2}, SensorCount); //pins for the output and input. Configured for a ESP. (TODO- Configure for UNO.)
 
   delay(500);
   pinMode(LED_BUILTIN, OUTPUT);
