@@ -34,8 +34,8 @@ int threshold[SensorCount];
 //Theses are the constants we need to calibrate to make sure it runs properly. (TODO- Calibrate)
 
 float Kp = 15;
-float Ki = 0;
-float Kd = 0;
+float Ki = 0.1;
+float Kd = 2;
 
 uint8_t multiP = 1;
 uint8_t multiI  = 1;
